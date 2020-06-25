@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CPP</title>
+    <style>
+    @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    .imgMiddle {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    }
+    /* Clearfix (clear floats) */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .middle{
+        display: table; 
+        margin-top: 10%;
+        margin-left: auto; 
+        margin-right: auto;
+        } 
+    #cicularcrop{
+        width: 300px;
+        height:300px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 50px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    </style>
+</head>
+<body>
+<div class="middle">
+    <div class ="row"></div>
+        <h1 class="middle">침펄풍을 만나보세요!</h1>
+        <img class="column" id = "cicularcrop" src="pealo.jpg" width=100%>
+        <img class="column" id = "cicularcrop" src="pealo.jpg" width=100%>
+        <img class="column" id = "cicularcrop" src="pealo.jpg" width=100%>
+    </div>
+</div>
+</body>
+</html>
